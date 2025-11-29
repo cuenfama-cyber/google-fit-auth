@@ -12,7 +12,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "super_secret_key_for_flask"
 
 # URL Base de Vercel/tu app (ej: google-fit-auth.vercel.app)
 # IMPORTANTE: Confirma que la URL de tu proyecto sea correcta.
-VERCEL_URL = "google-fit-auth.vercel.app"
+VERCEL_URL = "google-fit-auth-one.vercel.app"
 AUTH_URL = "https://accounts.google.com/o/oauth2/auth"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 REDIRECT_URI = f"https://{VERCEL_URL}/oauth2callback"
@@ -265,3 +265,4 @@ def error_page(title, detail):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
